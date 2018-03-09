@@ -5,7 +5,7 @@
 <script src="ARJS/aframe-ar.js"></script>
 
 <a-scene embedded arjs = 'trackingMethod: best;'>
-
+<a-marker-camera type='pattern' url='patterns/pattern-marker.patt'></a-marker-camera>
 <a-anchor hit-testing-enabled='true'>	
 		
 <!--	
@@ -21,10 +21,10 @@
     <a-assets>
         <img id="building_info" src="media/10742.jpg">
     </a-assets>
-    <a-image src="#building_info" position="0 0 0" scale="2.5 2.5 2.5" rotate="0 0 90"></a-image>
+    <a-image src="#building_info" position="0 0 0" scale="1 1 1" rotate="0 0 90"></a-image>
 
     <!--<a-marker-camera preset="greenTriangleMarker"></a-marker-camera>-->
-    <a-marker-camera type='pattern' url='patterns/pattern-marker.patt'></a-marker-camera>
+    
 </a-anchor>
 	<a-camera-static/>
 </a-scene>
