@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<script src="ARJS/aframe.min.js"></script>
+<script src="ARJS/aframe-ar.js"></script>
+
+<a-scene embedded arjs = 'trackingMethod: best;'>
+
+<a-anchor hit-testing-enabled='true'>	
+		
+	<a-assets>
+		<video id="penguin-sledding" autoplay loop="true" src="media/video-2.mp4"></video>
+	</a-assets>
+
+  <!-- Using the asset management system. -->
+	<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+		 
+</a-anchor>
+	<a-camera-static/>
+</a-scene>
+
+</html>
